@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Level HTML Template</title>
+<!--
+
+Template 2095 Level
+
+http://www.tooplate.com/view/2095-level
+
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   <!-- Templatemo style -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+<style>
+    #my_id1
+    {
+        font-weight: 1000;
+        text-align: center;
+        font-size: 1.1vw;
+    }
+    #my_id2
+    {
+        padding-left: 0.7vw;
+    }
+    #my_id3
+    {
+        font-family: Agency FB;
+    }
+    #my_id4
+    {
+        font-family: Calibri;
+        font-size: 1.5vw;
+    }
+
+    .my_class1
+    {
+        width: 99vw;
+        height: 80vh;
+        margin-left: -0.7vw;
+    }
+
+    #my_id5
+    {
+        margin-bottom: 2vh;
+    }
+
+    #my_id6
+    {
+        background-color: rgb(153, 111, 213);
+        color: white;
+    }
+
+    #my_id7
+    {
+        color: white;
+    }
+
+    #slideshow { 
+    margin: 1px auto; 
+    /* position: relative;  */
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+    margin-bottom: 30vh;
+    }
+
+    #slideshow > div { 
+        position: absolute; 
+        top: 10px; 
+        left: 10px; 
+        right: 10px; 
+        bottom: 10px; 
+    }
+
+    .dropbtn {
+  background-color: #6f42c1;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 15px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans';
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #6f42c1;}
+
+#polygon {
+    margin-left: -46vw;
+    margin-top: 0.2vh;
+}
+
+
+</style>
+
+    <body>
+
+         <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                                HumSafar
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item" id="my_id6">
+                                    <a class="nav-link" href="explore.html"><b id="my_id7">Explore</b><span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item" onmousedown="openWebsite()">
+                                    <a class="nav-link" href="login.html" ><b>Plan My Trip</b></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-6"><b>Contact Us</b></a>
+                                  </li>
+                                </ul>
+                            </div>                            
+                        </nav>            
+                    </div>
+                </div>
+            </div>
+            <center>
+            <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+                
+                 <div class="tm-section-2" id="tm-section-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <h2 class="tm-section-title" id ="my_id3">Find your next perfect travel destination.</h2>
+                                <br/>
+                                <p class="tm-color-white tm-section-subtitle" id="my_id4">Choose the type of traveller your are:
+                                </p>
+                                <!-- <a href="#" class="tm-color-white tm-btn-white-bordered" id = "my_id5" onclick="openWebsite()">Plan My Trip</a> -->
+                                <div class="dropdown">
+                                    <button  class="tm-color-white tm-btn-white-bordered">Select</button>
+                                    <div class="dropdown-content">
+                                      <a href="explore.html">Budget Conscious</a>
+                                      <a href="explore.html">Picky</a>
+                                      <a href="explore.html">Power</a>
+                                      <a href="explore.html">Loves travelling, hates planning</a>
+                                    </div>
+                                  </div>
+                            </div>                
+                        </div>
+                    </div>        
+                </div>
+                <div class="tm-section tm-position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="polygon" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+                        <polygon fill="rgb(153, 111, 213)" points="0,0  100,0  50,60"></polygon>                   
+                    </svg> 
+                </div>
+                
+            
+          
+            </div>
+            
+            
+            <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                            <div class="tm-article-carousel">                            
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-01.jpg" alt="Image" class="img-fluid" width="75%">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Dubai, United Arab Emirates</h3></header>
+                                        <p>Located in the eastern part of the Arabian Peninsula on the coast of the Persian Gulf, Dubai aims to be the business hub of Western Asia.It is also a major global transport hub for passengers and cargo.</p>
+                                        <!-- <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a> -->
+                                    </div>                            
+                                </article>                    
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-02.jpg" alt="Image" class="img-fluid" width="75%">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">New York, United States of America</h3></header>
+                                        <p>New York City has been described as the cultural, financial, and media capital of the world, significantly influencing commerce,entertainment, research, technology, education, politics, tourism, art, fashion, and sports. Home to the headquarters of the United Nations, New York is an important center for international diplomacy.</p>
+                                        <!-- <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a> -->
+                                    </div>                                
+                                </article>
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-01.jpg" alt="Image" class="img-fluid" width="75%">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Cairo, Egypt</h3></header>
+                                        <p>Egypt has one of the longest histories of any country, tracing its heritage along the Nile Delta back to the 6th–4th millennia BCE. Considered a cradle of civilisation, Ancient Egypt saw some of the earliest developments of writing, agriculture, urbanisation, organised religion and central government.</p>
+                                        <!-- <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Info.</a> -->
+                                    </div>                                
+                                </article>
+                               
+                            </div>    
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
+                            <div class="tm-bg-white">
+                                <div class="tm-bg-primary tm-sidebar-pad">
+                                    <h3 class="tm-color-white tm-sidebar-title">Recommended <br> Places</h3>
+                                   <!--  <p class="tm-color-white tm-margin-b-0 tm-font-light">Enamel pin cliche tilde, kitsch and VHS thundercats</p> -->
+                                </div>
+                                <div class="tm-sidebar-pad-2">
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-01.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Kashmir</h4>
+                                        </div>                                        
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-02.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Nepal</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Andaman</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-04.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">China</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-01.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Italy</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-02.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Germany</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Brazil</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-04.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">China</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-01.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Australia</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-02.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Amazon</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">India</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-04.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">New Jersey</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-01.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">California</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-02.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Texas</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/tn-img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Alaska</h4>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </center>
+
+            <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
+                <div class="container ie-h-align-center-fix">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7">
+                            <div id="google-map"></div>        
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
+                            <div class="tm-bg-white tm-p-4">
+                                <p id="my_id1"> Need Help? We are Listening.</p>
+                                <form action="index.html" method="post" class="contact-form">
+                                    <div class="form-group">
+                                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary tm-btn-primary">Send Message Now</button>
+                                </form>
+                            </div>                            
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            
+            
+            <footer class="tm-bg-dark-blue">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
+                        Copyright &copy; <span class="tm-current-year">2018</span> Your Company
+                        
+                        - Design: Tooplate</p>        
+                    </div>
+                </div>                
+            </footer>
+        </div>
+
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+        <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+        <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script src="slick/slick.min.js"></script>  
+
+        <script>
+
+            function openWebsite()
+            {
+                window.open("login.html","_self")
+            };
+            /* Google map
+            ------------------------------------------------*/
+            var map = '';
+            var center;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 16,
+                    center: new google.maps.LatLng(12.971599,77.594566),
+                    scrollwheel: false
+                };
+
+                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+                google.maps.event.addDomListener(map, 'idle', function() {
+                  calculateCenter();
+              });
+
+                google.maps.event.addDomListener(window, 'resize', function() {
+                  map.setCenter(center);
+              });
+            }
+
+            function calculateCenter() {
+                center = map.getCenter();
+            }
+
+            function loadGoogleMap(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            } 
+
+            function setCarousel() {
+                
+                if ($('.tm-article-carousel').hasClass('slick-initialized')) {
+                    $('.tm-article-carousel').slick('destroy');
+                } 
+
+                if($(window).width() < 438){
+                    // Slick carousel
+                    $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    });
+                }
+                else {
+                 $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    });   
+                }
+            }
+
+            function setPageNav(){
+                if($(window).width() > 991) {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 79
+                    });   
+                }
+                else {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 65
+                    });   
+                }
+            }
+
+            function togglePlayPause() {
+                vid = $('.tmVideo').get(0);
+
+                if(vid.paused) {
+                    vid.play();
+                    $('.tm-btn-play').hide();
+                    $('.tm-btn-pause').show();
+                }
+                else {
+                    vid.pause();
+                    $('.tm-btn-play').show();
+                    $('.tm-btn-pause').hide();   
+                } 
+            }
+       
+            $(document).ready(function(){
+
+                $("#slideshow > div:gt(0)").hide();
+
+                            setInterval(function() { 
+                            $('#slideshow > div:first')
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo('#slideshow');
+                            },  3000);
+
+
+                $(window).on("scroll", function() {
+                    if($(window).scrollTop() > 100) {
+                        $(".tm-top-bar").addClass("active");
+                    } else {
+                        //remove the background property so it comes transparent again (defined in your css)
+                       $(".tm-top-bar").removeClass("active");
+                    }
+                });      
+
+                // Google Map
+                loadGoogleMap();  
+
+                // Date Picker
+                const pickerCheckIn = datepicker('#inputCheckIn');
+                const pickerCheckOut = datepicker('#inputCheckOut');
+                
+                // Slick carousel
+                setCarousel();
+                setPageNav();
+
+                $(window).resize(function() {
+                  setCarousel();
+                  setPageNav();
+                });
+
+                // Close navbar after clicked
+                $('.nav-link').click(function(){
+                    $('#mainNav').removeClass('show');
+                });
+
+                // Control video
+                $('.tm-btn-play').click(function() {
+                    togglePlayPause();                                      
+                });
+
+                $('.tm-btn-pause').click(function() {
+                    togglePlayPause();                                      
+                });
+
+                // Update the current year in copyright
+                $('.tm-current-year').text(new Date().getFullYear());                           
+            });
+
+        </script> 
+           
+
+</body>
+</html>
+
