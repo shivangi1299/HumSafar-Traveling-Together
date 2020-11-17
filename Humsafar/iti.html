@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="imag/jpg" href="img/logo.png">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+    <title>Plan Your Trip</title>
+<!--
+
+Template 2095 Level
+
+http://www.tooplate.com/view/2095-level
+
+-->
+    <!-- load stylesheets -->
+    <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+<style>
+    #my_id1
+    {
+        font-weight: 1000;
+        text-align: center;
+        font-size: 1.1vw;
+    }
+    #my_id2
+    {
+        padding-left: 0.7vw;
+    }
+    #my_id3
+    {
+        font-family: Agency FB;
+    }
+    #my_id4
+    {
+        font-family: Calibri;
+        font-size: 1.5vw;
+    }
+
+    .my_class1
+    {
+        width: 99vw;
+        height: 80vh;
+        margin-left: -0.7vw;
+    }
+
+    #my_id5
+    {
+        margin-bottom: 2vh;
+    }
+
+    #my_id6
+    {
+        /* background-color: black;
+        max-height: 1vh; */
+    }
+
+    #carouselExampleIndicators 
+    {
+        margin-top: 10vh;
+        /* background-color: black; */
+    }
+
+    .question
+    {
+        font-size: 1.4vw;
+        font-weight: 1000;
+        text-align: center;
+    }
+
+    .option
+    {
+        margin-top: 5vh;
+        font-size: 1.1vw;
+        margin-left: 13vw;
+    }
+
+    .option4
+    {
+        margin-top: 5vh;
+        font-size: 1.1vw;
+        margin-left: 6vw;
+    }
+
+    .d-block
+    {
+        width: 40vw;
+        height: 50vh;
+        margin-left: 30vw;
+        border: solid rgb(153, 111, 213) 3px;
+        border-radius: 2vw;
+        padding: 2vw;
+        /* box-shadow: 0 0 0 3px rgb(153, 111, 213); */
+    }
+
+    #my_id7
+    {
+        padding: 1.5vh 2vw 1.5vh 2vw ;
+        text-align: center;
+        font-family: Open Sans;
+        background-color: rgb(153, 111, 213);
+        color: white;
+        border: 1px solid white;
+        margin-left: 45vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    #my_id8
+    {
+        background-color: rgb(153, 111, 213);
+        color: white;
+    }
+
+    #my_id9
+    {
+        color: white;
+    }
+
+    #my_id10
+    {
+        background-color: white;
+    }
+
+    #my_id12 a
+    {
+        color: white;
+    }
+
+    #my_id13
+    {
+        border: 0;
+        background-color: white;
+    }
+
+    #slideshow { 
+    margin: 1px auto; 
+    /* position: relative;  */
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+    margin-bottom: 30vh;
+    }
+
+    #slideshow > div { 
+        position: absolute; 
+        top: 10px; 
+        left: 10px; 
+        right: 10px; 
+        bottom: 10px; 
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-image: linear-gradient(45deg,  rgb(153, 111, 213), rgb(153, 111, 213));
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.courses-container {
+	
+}
+
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 1000px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color: white;
+	color: #fff;
+	padding: 30px;
+	max-width: 1000px;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #2A265F;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 90%;
+}
+
+.progress-text {
+	font-size: 10px;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+
+.btn {
+	background-color: white;
+	border: 0;
+	border-radius: 50px;
+	/* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); */
+	color: grey;
+	font-size: 12px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+
+.btn:hover{
+    color:black;
+    cursor:pointer
+}
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {
+	position: fixed;
+	right: 0;
+	bottom: 80px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+	transform: translateX(-10px);
+}
+
+.social-panel {	
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
+	border: 5px solid #001F61;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Muli';
+	position: relative;
+	height: 169px;	
+	width: 370px;
+	max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+	border: 0;
+	color:  rgb(153, 111, 213);
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+	outline: none;
+}
+
+.social-panel p {
+	background-color: #001F61;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 2px 17px 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 235px;
+}
+
+.social-panel p i {
+	margin: 0 5px;
+}
+
+.social-panel p a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+.social-panel h4 {
+	margin: 20px 0;
+	color:  rgb(153, 111, 213);	
+	font-family: 'Muli';	
+	font-size: 14px;	
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.social-panel ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-panel ul li {
+	margin: 0 10px;
+}
+
+.social-panel ul li a {
+	border: 1px solid #DCE1F2;
+	border-radius: 50%;
+	color: #001F61;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+	border-color: #FF6A00;
+	box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: white;
+	border: 1px solid whitesmoke;
+	/* box-shadow: 0 16px 22px -17px #03153B; */
+	color: grey;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+.floating-text {
+	background-color: white;
+	border-radius: 10px 10px 0 0;
+	color: grey;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
+
+p{
+    font-size: 14px;
+}
+</style>
+
+<script>
+    
+</script>
+
+    <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="logo_small.png" alt="Site logo" style="width:200px; height:70px;">
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item" id="my_id10" onmousedown="openWebsite()">
+                                    <a class="nav-link" href="#top"><b>Home</b> <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4"><b>Explore</b></a>
+                                  </li>
+                                  <li class="nav-item" id="my_id8">
+                                    <a class="nav-link" href="plan.html"><b id="my_id9">Plan My Trip</b></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-6"><b>Contact Us</b></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#"><span id="my_id14"></span></a>
+                                  </li>
+                                </ul>
+                            </div>                            
+                        </nav>            
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h1 style="color:white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><center>Your Itinerary</center></h1>
+            <br>
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview"> <!--style="background-image:url('bg.jpg'); height: 200px; width:200px; background-position: center;">-->
+                        <img src="images/sealife.jpg" style="width:400px; height:300px;"> 
+                    </div>
+                    <div class="course-info">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                90% match
+                            </span>
+                        </div>
+                        <h6><br>Day 1</h6>
+                        <h4 style="text-align:left"><br> Arrival - SEA LIFE Bangkok Ocean World</h4>
+                        <p> Arrive at Bangkok and settle in. Explore 6,000 colorful marine creatures at SEA LIFE Bangkok Ocean World, one of Bangkok's top tourist attractions.     
+                            <br><br></p>
+                            <button class="btn">CUSTOMISE</button>
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview"> <!--style="background-image:url('bg.jpg'); height: 200px; width:200px; background-position: center;">-->
+                        <img src="images/grandpalace.jpg" style="width:400px; height:300px"> 
+                    </div>
+                    <div class="course-info">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                90% match
+                            </span>
+                        </div>
+                        <h6><br>Day 2</h6>
+                        <h4 style="text-align:left"><br> The National Musuem Bangkok - The Grand Palace - Temple of Dawn</h4>
+                        <p> Go on a journey through thousands of years of Thai history and culture at The National Museum Bangkok, a treasure chest housed inside the former palace of Siamese viceroys.
+                            Explore the famous complex of ornate buildings at The Grand Palace, a gem in the country's architectural and political heritage. 
+                            Admire the grand and evocative design of Temple Of Dawn (Wat Arun), a towering Buddhist temple located in the heart of Bangkok.     
+                            <br><br></p>
+                        <button class="btn">CUSTOMISE</button>
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview"> <!--style="background-image:url('bg.jpg'); height: 200px; width:200px; background-position: center;">-->
+                        <img src="images/ayuthaya.jpg" style="width: 400px; height: 300px;"> 
+                    </div>
+                    <div class="course-info">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                90% match
+                            </span>
+                        </div>
+                        <h6><br>Day 3</h6>
+                        <h4 style="text-align:left"><br> Historic City of Ayutthaya - Temple of the Golden Buddha - 
+                            Asiatique The Riverfront</h4>
+                        <p> Discover Thailand's rich and compelling history at Historic City of Ayutthaya, a settlement founded in 1350.
+                            Witness the delicately modeled beauty of the world's largest gold seated Buddha at Temple of the Golden Buddha (Wat Traimit).     
+                            Do some atmospheric night shopping at Asiatique The Riverfront, a large open-air plaza. <br><br></p>
+                        <button class="btn">CUSTOMISE</button>
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview"> <!--style="background-image:url('bg.jpg'); height: 200px; width:200px; background-position: center;">-->
+                        <img src="images/siamparagon.jpg" style="width:400px; height:300px;"> 
+                    </div>
+                    <div class="course-info">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                90% match
+                            </span>
+                        </div>
+                        <h6><br>Day 4</h6>
+                        <h4 style="text-align:left"><br> Wat Nak Prok - Wat Pho - Siam Paragon - Bangkok Nightlife</h4>
+                        <p> Visit Wat Pho, one of the six main Buddhist temples in Thailand. Admire the 46 m (151 ft) long Buddha statue and its memorable pose.
+                            Find what you're looking for at Siam Paragon, a modern, upscale shopping mall in Bangkok--and one of the largest in Asia.
+                            Explore Bangkok's Nightlife.
+                            <br><br></p>
+                        <button class="btn">CUSTOMISE</button>
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview"> <!--style="background-image:url('bg.jpg'); height: 200px; width:200px; background-position: center;">-->
+                        <img src="images/biketour.jpg" style="width: 400px; height: 300px;"> 
+                    </div>
+                    <div class="course-info">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                90% match
+                            </span>
+                        </div>
+                        <h6><br>Day 5</h6>
+                        <h4 style="text-align:left"><br> Bangkok Back Street Small Group Bike Tour - Departure </h4>
+                        <p> Do your bit to relieve traffic congestion in Thailand's capital by joining this Bangkok tour that trades in the tour bus for the humble bicycle.      
+                            <br><br></p>
+                        <button class="btn">CUSTOMISE</button>
+                        </div>
+                </div>
+            </div>
+    </body>
+           
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+        <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+        <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+        
+        <script>
+
+        var u_name = localStorage.getItem("u_name");
+        var d = document.getElementById("my_id14");
+        d.innerHTML = "Hello, " + u_name;
+
+            function openWebsite()
+            {
+                window.open("index.html","_self")
+            };
+            /* Google map
+            ------------------------------------------------*/
+            var map = '';
+            var center;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 16,
+                    center: new google.maps.LatLng(12.971599,77.594566),
+                    scrollwheel: false
+                };
+
+                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+                google.maps.event.addDomListener(map, 'idle', function() {
+                  calculateCenter();
+              });
+
+                google.maps.event.addDomListener(window, 'resize', function() {
+                  map.setCenter(center);
+              });
+            }
+
+            function calculateCenter() {
+                center = map.getCenter();
+            }
+
+            function loadGoogleMap(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            } 
+
+            function setCarousel() {
+                
+                if ($('.tm-article-carousel').hasClass('slick-initialized')) {
+                    $('.tm-article-carousel').slick('destroy');
+                } 
+
+                if($(window).width() < 438){
+                    // Slick carousel
+                    $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    });
+                }
+                else {
+                 $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    });   
+                }
+            }
+
+            function setPageNav(){
+                if($(window).width() > 991) {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 79
+                    });   
+                }
+                else {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 65
+                    });   
+                }
+            }
+
+            function togglePlayPause() {
+                vid = $('.tmVideo').get(0);
+
+                if(vid.paused) {
+                    vid.play();
+                    $('.tm-btn-play').hide();
+                    $('.tm-btn-pause').show();
+                }
+                else {
+                    vid.pause();
+                    $('.tm-btn-play').show();
+                    $('.tm-btn-pause').hide();   
+                }  
+            }
+       
+            $(document).ready(function(){
+
+                $("#slideshow > div:gt(0)").hide();
+
+                            setInterval(function() { 
+                            $('#slideshow > div:first')
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo('#slideshow');
+                            },  3000);
+
+
+                $(window).on("scroll", function() {
+                    if($(window).scrollTop() > 100) {
+                        $(".tm-top-bar").addClass("active");
+                    } else {
+                        //remove the background property so it comes transparent again (defined in your css)
+                       $(".tm-top-bar").removeClass("active");
+                    }
+                });      
+
+                // Google Map
+                loadGoogleMap();  
+
+                // Date Picker
+                const pickerCheckIn = datepicker('#inputCheckIn');
+                const pickerCheckOut = datepicker('#inputCheckOut');
+                
+                // Slick carousel
+                setCarousel();
+                setPageNav();
+
+                $(window).resize(function() {
+                  setCarousel();
+                  setPageNav();
+                });
+
+                // Close navbar after clicked
+                $('.nav-link').click(function(){
+                    $('#mainNav').removeClass('show');
+                });
+
+                // Control video
+                $('.tm-btn-play').click(function() {
+                    togglePlayPause();                                      
+                });
+
+                $('.tm-btn-pause').click(function() {
+                    togglePlayPause();                                      
+                });
+
+                // Update the current year in copyright
+                $('.tm-current-year').text(new Date().getFullYear());                           
+            });
+            // INSERT JS HERE
+
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+        </script>             
+
+</body>
+</html>
+
