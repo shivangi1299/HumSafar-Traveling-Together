@@ -11,3 +11,7 @@ This project contains:
 2. Concept Video 
 3. LoFi Prototype - Sketches of the website
 4. HiFi Prototype - Website based on HTML, CSS, JavaScript
+
+1,3 are present in HumSafar Presentation.pdf
+2 is ConceptVideo.mp4
+4 can be accessed by running index.html
